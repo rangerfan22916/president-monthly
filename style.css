@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8b400;
+}
+
+/* Hero Section */
+.hero {
+    background: url('imgs/whitehouse.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+}
+
+.section-bg {
+    background-color: #f8f9fa;
+}
+
+/* Biography Section */
+#bio .img-fluid {
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Gallery */
+#gallery .img-fluid {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#gallery .img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #f8b400;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e89c00;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
