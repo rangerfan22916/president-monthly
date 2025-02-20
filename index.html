@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Quincy Adams</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -23,10 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#bio">Biography</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#early-life">Early Life</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#presidency">Presidency</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#post-presidency">Post-Presidency</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#legacy">Legacy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                 </ul>
             </div>
@@ -37,67 +32,50 @@
     <header class="hero">
         <div class="container text-center text-white">
             <h1>John Quincy Adams</h1>
-            <p>6th President of the United States (1825-1829) | Diplomat | Abolitionist | Statesman</p>
+            <p>6th President of the United States (1825-1829)</p>
         </div>
     </header>
 
-    <!-- Biography Section with Video -->
-    <section id="bio" class="container my-5 text-center">
-        <h2>Biography</h2>
-        <p>John Quincy Adams dedicated his life to public service, from diplomacy to the presidency to fighting against
-            slavery.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/U3T-VgJcXBk"
-            title="John Quincy Adams Biography" frameborder="0" allowfullscreen></iframe>
+    <!-- Biography Section -->
+    <section id="bio" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="imgs/portrait.jpg" class="styled-img" alt="John Quincy Adams">
+            </div>
+            <div class="col-md-6">
+                <h2>Biography</h2>
+                <p>John Quincy Adams was the 6th president of the United States and the son of John Adams. A skilled
+                    diplomat, he played a major role in foreign policy and later became a prominent member of the U.S.
+                    House of Representatives.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Early Life Section -->
-    <section id="early-life" class="section-bg container my-5 text-center">
-        <h2>Early Life</h2>
-        <img src="imgs/early-life.jpg" class="img-fluid rounded shadow-lg" alt="Young John Quincy Adams">
-        <p>Born on July 11, 1767, Adams grew up during the American Revolution and traveled with his father to Europe,
-            shaping his future in diplomacy.</p>
-    </section>
-
-    <!-- Presidency Section -->
-    <section id="presidency" class="container my-5 text-center">
-        <h2>Presidency</h2>
-        <img src="imgs/presidency.jpg" class="img-fluid rounded shadow-lg" alt="John Quincy Adams Presidency">
-        <p>Adams became president after a contested election. He promoted national infrastructure and education but
-            faced strong opposition.</p>
-    </section>
-
-    <!-- Post-Presidency Section -->
-    <section id="post-presidency" class="section-bg container my-5 text-center">
-        <h2>Post-Presidency</h2>
-        <img src="imgs/post-presidency.jpg" class="img-fluid rounded shadow-lg" alt="John Quincy Adams in Congress">
-        <p>Adams became a fierce opponent of slavery and served in Congress for 17 years, fighting for abolition and
-            human rights.</p>
-        <p>In 1848, while delivering a speech in the House of Representatives, Adams collapsed due to a stroke. He was
-            taken to the Speaker’s Room in the Capitol, where he passed away two days later on February 23, 1848. His
-            last words were reportedly, “This is the last of earth. I am content.”</p>
-    </section>
-
-    <!-- Legacy Section -->
-    <section id="legacy" class="container my-5 text-center">
-        <h2>Legacy</h2>
-        <img src="imgs/legacy.jpg" class="img-fluid rounded shadow-lg" alt="John Quincy Adams Legacy">
-        <p>Adams’ diplomatic achievements and his fight against slavery influenced future generations. He remains one of
-            America's most principled leaders.</p>
+    <!-- Achievements Section -->
+    <section id="achievements" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Major Achievements</h2>
+            <ul class="list-group list-group-flush text-start mx-auto" style="max-width: 600px;">
+                <li class="list-group-item">Negotiated the Treaty of Ghent (1814), ending the War of 1812.</li>
+                <li class="list-group-item">Authored the Monroe Doctrine as Secretary of State.</li>
+                <li class="list-group-item">Advocated against slavery in Congress.</li>
+                <li class="list-group-item">Supported scientific research and infrastructure projects.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="section-bg container my-5 text-center">
-        <h2>Gallery</h2>
+    <section id="gallery" class="container my-5">
+        <h2 class="text-center">Gallery</h2>
         <div class="row">
             <div class="col-md-4">
-                <img src="imgs/picture.jpg" class="img-fluid rounded shadow" alt="Adams in 1843">
+                <img src="imgs/picture.jpg" class="styled-img" alt="Adams in 1843">
             </div>
             <div class="col-md-4">
-                <img src="imgs/signature.png" class="img-fluid rounded shadow" alt="Adams' Signature">
+                <img src="imgs/signature.png" class="styled-img" alt="Adams' Signature">
             </div>
             <div class="col-md-4">
-                <img src="imgs/oldwhitehouse.jpg" class="img-fluid rounded shadow"
-                    alt="White House during Adams' presidency">
+                <img src="imgs/oldwhitehouse.jpg" class="styled-img" alt="White House during Adams' presidency">
             </div>
         </div>
     </section>
@@ -109,6 +87,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
