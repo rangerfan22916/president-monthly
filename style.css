@@ -1,68 +1,58 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    line-height: 1.7;
+/* General Image Styling */
+.styled-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensures uniform image sizes in the Gallery and Achievements sections */
+.uniform-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
 }
 
 /* Hero Section */
 .hero {
     background: url('imgs/whitehouse.jpg') no-repeat center center/cover;
-    height: 50vh;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-/* Styled Images */
-.styled-img {
+
+/* Quotes Section */
+#quotes {
+    background: linear-gradient(to right, #343a40, #23272b);
+}
+
+/* Button Styling */
+.btn-light {
+    background-color: #f8f9fa;
+    color: #000;
+    border: 2px solid #f8f9fa;
+    transition: 0.3s;
+}
+
+.btn-light:hover {
+    background-color: #ffffff;
+    color: #000;
+    border-color: #dcdcdc;
+}
+img {
     width: 100%;
+    max-width: 500px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Gallery Section */
-#gallery .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-#gallery .col-md-4 {
-    flex: 1;
-    min-width: 300px; 
-    max-width: 32%; 
-}
-
-#gallery img {
-    width: 100%;
-    height: auto; 
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-#gallery p {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 8px;
-}
-
-
-
-
-/* Quotes */
-#quotes blockquote {
-    font-style: italic;
-    font-size: 1.5rem;
-}
-
-/* Footer */
-.footer {
-    background-color: #222;
-    padding: 20px 0;
-    text-align: center;
-}
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    background: none;
+  }
+  

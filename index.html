@@ -41,13 +41,12 @@
     <section id="bio" class="container my-5">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <img src="imgs/portrait.jpg" class="styled-img" alt="John Quincy Adams">
+                <img src="imgs/portrait.jpg" class="styled-img img-fluid" alt="John Quincy Adams">
             </div>
             <div class="col-md-6">
                 <h2>Biography</h2>
                 <p>John Quincy Adams, the eldest son of President John Adams, was born in 1767. He was a diplomat,
-                    senator, and secretary of state before becoming the sixth president of the United States. His early
-                    years were shaped by his father's role in the American Revolution.</p>
+                    senator, and secretary of state before becoming the sixth president of the United States.</p>
                 <p>Adams played a significant role in shaping U.S. foreign policy, negotiating key treaties and
                     formulating the Monroe Doctrine. After his presidency, he served in the House of Representatives for
                     17 years, where he became a leading opponent of slavery.</p>
@@ -59,73 +58,65 @@
     <section id="achievements" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center">Major Achievements</h2>
-            <div class="row align-items-center">
-                <!-- Achievements List -->
+            <div class="row">
                 <div class="col-md-6">
                     <ul class="list-group list-group-flush text-start">
-                        <li class="list-group-item">
-                            <strong>Negotiated the Treaty of Ghent (1814)</strong> – As a key diplomat, Adams played a
-                            crucial role in negotiating the peace treaty that ended the War of 1812 between the United
-                            States and Great Britain, helping restore relations between the two nations.
+                        <li class="list-group-item achievement" data-img="imgs/ghent.jpg">
+                            <strong>Negotiated the Treaty of Ghent (1814)</strong> – Adams played a vital role in ending
+                            the War of 1812 between the U.S. and Britain. His diplomatic skills helped restore relations
+                            and prevent future conflicts.
                         </li>
-                        <li class="list-group-item">
-                            <strong>Authored the Monroe Doctrine</strong> – As Secretary of State, he was instrumental
-                            in formulating the Monroe Doctrine, a cornerstone of U.S. foreign policy that warned
-                            European nations against further colonization in the Americas.
+                        <li class="list-group-item achievement" data-img="imgs/monroe-doctrine.jpg">
+                            <strong>Authored the Monroe Doctrine</strong> – As Secretary of State, Adams influenced the
+                            Monroe Doctrine, which warned European nations against interfering in the Americas, shaping
+                            U.S. foreign policy for years to come.
                         </li>
-                        <li class="list-group-item">
-                            <strong>Advocated against slavery in Congress</strong> – After his presidency, Adams served
-                            in the U.S. House of Representatives for nearly 17 years, becoming one of the most vocal
-                            opponents of slavery and famously arguing before the Supreme Court in the Amistad case,
-                            securing the freedom of enslaved Africans who had revolted.
+                        <li class="list-group-item achievement" data-img="imgs/slavery.jpg">
+                            <strong>Fought Against Slavery</strong> – In the House of Representatives, he fiercely
+                            opposed slavery and successfully defended the Amistad captives, a landmark case in
+                            abolitionist history.
                         </li>
-                        <li class="list-group-item">
-                            <strong>Promoted national infrastructure and economic development</strong> – As president,
-                            he supported the expansion of the nation’s infrastructure, advocating for the construction
-                            of roads, canals, and a national university to promote education and scientific advancement.
+                        <li class="list-group-item achievement" data-img="imgs/infrastructure.jpg">
+                            <strong>Promoted National Infrastructure</strong> – As president, he advocated for roads,
+                            canals, and a national university, believing in a strong federal role in economic growth and
+                            education.
                         </li>
-                        <li class="list-group-item">
-                            <strong>Championed scientific and cultural advancement</strong> – Adams was a strong
-                            advocate for funding scientific research and played a role in the establishment of the
-                            Smithsonian Institution, believing in the power of knowledge and innovation for national
-                            progress.
+                        <li class="list-group-item achievement" data-img="imgs/smithsonian.jpg">
+                            <strong>Helped Establish the Smithsonian Institution</strong> – Adams pushed for the use of
+                            James Smithson’s donation to create the Smithsonian Institution, promoting scientific
+                            research and knowledge.
                         </li>
                     </ul>
                 </div>
-                <!-- Image -->
                 <div class="col-md-6 text-center">
-                    <img src="imgs/presidency.jpg" class="styled-img img-fluid" alt="Adams' achievements">
+                    <img id="achievement-img" src="imgs/presidency.jpg" class="styled-img uniform-img img-fluid"
+                        alt="John Quincy Adams' legacy">
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <!-- Gallery Section -->
     <section id="gallery" class="container my-5">
         <h2 class="text-center">Gallery</h2>
         <div class="row text-center">
             <div class="col-md-4">
-                <img src="imgs/picture.jpg" class="styled-img img-fluid" alt="Adams in 1843">
-                <p>A rare photograph of John Quincy Adams, taken in 1843, is considered the earliest known photograph of
-                    a U.S. president.</p>
+                <img src="imgs/picture.jpg" class="styled-img uniform-img img-fluid" alt="Adams in 1843">
+                <p>John Quincy Adams, one of the earliest photographed U.S. presidents (1843).</p>
             </div>
             <div class="col-md-4">
-                <img src="imgs/signature.png" class="styled-img img-fluid" alt="Adams' Signature">
-                <p>John Quincy Adams' signature, as used in official documents and personal correspondences, showcases
-                    his elegant penmanship.</p>
+                <img src="imgs/signature.png" class="styled-img uniform-img img-fluid" alt="Adams' Signature">
+                <p>John Quincy Adams' signature.</p>
             </div>
             <div class="col-md-4">
-                <img src="imgs/oldwhitehouse.jpg" class="styled-img img-fluid"
+                <img src="imgs/oldwhitehouse.jpg" class="styled-img uniform-img img-fluid"
                     alt="White House during Adams' presidency">
-                <p>The White House as it appeared during Adams’ presidency (1825-1829), reflecting the neoclassical
-                    architecture of the early 19th century.</p>
+                <p>The White House in the 1820s.</p>
             </div>
         </div>
     </section>
 
-    <!-- Quote Generator -->
+    <!-- Quotes Section -->
     <section id="quotes" class="bg-dark text-white py-5 text-center">
         <div class="container">
             <h2>Famous Quotes</h2>
@@ -133,15 +124,6 @@
             <button class="btn btn-light" onclick="generateQuote()">New Quote</button>
         </div>
     </section>
-
-    <!-- Footer with Video -->
-    <footer class="footer">
-        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <p class="mb-3 mb-md-0">&copy; 2025 John Quincy Adams Tribute</p>
-            <iframe width="300" height="169" src="https://www.youtube.com/embed/hEULcKFBKLw?start=24" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
