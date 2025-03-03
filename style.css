@@ -1,58 +1,31 @@
-/* General Image Styling */
-.styled-img {
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
     width: 100%;
-    max-height: 250px;
-    object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
-/* Ensures uniform image sizes in the Gallery and Achievements sections */
-.uniform-img {
+/* Remove white backgrounds */
+img {
+    background: transparent;
+}
+
+/* Increase Image Size */
+.styled-img, .uniform-img {
     width: 100%;
-    max-height: 250px;
+    max-height: 400px; /* Bigger images */
     object-fit: contain;
 }
 
-/* Hero Section */
+/* Fix Hero Text Contrast */
 .hero {
     background: url('imgs/whitehouse.jpg') no-repeat center center/cover;
-    height: 300px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-
-
-/* Quotes Section */
-#quotes {
-    background: linear-gradient(to right, #343a40, #23272b);
-}
-
-/* Button Styling */
-.btn-light {
-    background-color: #f8f9fa;
-    color: #000;
-    border: 2px solid #f8f9fa;
-    transition: 0.3s;
-}
-
-.btn-light:hover {
-    background-color: #ffffff;
-    color: #000;
-    border-color: #dcdcdc;
-}
-img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 8px;
-    background: none;
-  }
-  
